@@ -1,0 +1,263 @@
+/*=================================================
+||				Imports 
+==================================================*/
+@import url("https://fonts.googleapis.com/css?family=Lato:400,100,300,700,100italic,300italic,400italic,700italic,900,900italic");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+
+/*=================================================
+||				1. Home
+==================================================*/
+
+body {
+	padding: 0;
+	margin: 0;
+}
+body .btn-bg {
+	width: 100%;
+	height: 33.5vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+body .btn-bg.bg-1 {
+	background: #6ab1c9;
+}
+body .btn-bg.bg-1 .btn-1 button {
+	color: #c7f8f9;
+	background: transparent;
+	border: 3px solid #c7f8f9;
+	border-radius: 5px;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	-webkit-transform: translate(0, 0);
+	transform: translate(0, 0);
+}
+body .btn-bg.bg-1 .btn-1 button a {
+	color: #c7f8f9;
+}
+body .btn-bg.bg-1 .btn-1 button:hover {
+	background: #c7f8f9;
+	color: #6ab1c9;
+	border: 3px solid #6ab1c9;
+	-webkit-transition: all 0.35s ease;
+	transition: all 0.35s ease;
+}
+body .btn-bg.bg-1 .btn-1 button:hover >a {
+	color: #6ab1c9;
+	-webkit-transition: all 0.35s ease;
+	transition: all 0.35s ease;
+}
+body .btn-bg.bg-1 .btn-1 button:active {
+	-webkit-transform: translate(5px, 5px);
+	transform: translate(5px, 5px);
+}
+
+body .btn-bg.bg-5 {
+	background: #fff;
+}
+body .btn-bg.bg-5 .btn-5 h2 {
+	font-size: 3em;
+	color: #c4c0c0;
+}
+
+body .btn-bg.bg-5 .btn-5 h3 {
+	font-family: Lato;
+	text-align: center;
+	color: #c4c0c0;
+}
+
+
+body .btn-bg.bg-6 {
+	background: #ac7ee5;
+}
+body .btn-bg.bg-6 .btn-6 button {
+	width: 11em;
+	height: 3em;
+	color: #d3b7f7;
+	background: transparent;
+	border: 3px solid #d3b7f7;
+	border-radius: 5px;
+	-webkit-transition: border 0.5s ease-out;
+	transition: border 0.5s ease-out;
+	transition-delay: 0.8s;
+}
+body .btn-bg.bg-6 .btn-6 button a {
+	color: #d3b7f7;
+	position: absolute;
+	z-index: 2;
+	left: 43px;
+	top: 17px;
+}
+body .btn-bg.bg-6 .btn-6 button::before,
+body .btn-bg.bg-6 .btn-6 button::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	content: 'LONG NIGHT';
+	border-radius: 50%;
+	display: block;
+	width: 22em;
+	height: 22em;
+	left: -5.5em;
+	text-align: center;
+	-webkit-transition: box-shadow 0.5s ease-out;
+	transition: box-shadow 0.5s ease-out;
+	transition-delay: 0.75s;
+	-webkit-transition-delay: 0.75s;
+	z-index: 1;
+}
+body .btn-bg.bg-6 .btn-6 button::after {
+	transition-delay: 0.25s;
+	-webkit-transition-delay: 0.25s;
+}
+body .btn-bg.bg-6 .btn-6 button:hover {
+	color: #fff;
+	border-color: #8460af;
+	animation: witch-word-color 1.5s ease;
+	-webkit-transition: border 0.2s ease;
+	transition: border 0.2s ease;
+}
+body .btn-bg.bg-6 .btn-6 button:hover::before {
+	box-shadow: inset 0 0 0 11em #b657e5;
+	transition-delay: 0.05s;
+}
+body .btn-bg.bg-6 .btn-6 button:hover::after {
+	box-shadow: inset 0 0 0 11em #8460af;
+	transition-delay: 0.5s;
+}
+.btn {
+	margin: 0 auto 30px auto;
+	display: block;
+}
+h2 {
+	text-align: center;
+	font-family: 'Raleway';
+	font-weight: 600;
+	color: #fff;
+}
+button {
+	cursor: pointer;
+	overflow: hidden;
+	outline: none;
+	color: #fff;
+	position: relative;
+	letter-spacing: 0.1em;
+	font-weight: 400;
+	padding: 1rem 3rem 1rem 3rem;
+	text-transform: uppercase;
+	font-family: "Lato";
+	font-size: 1.5em;
+}
+button a {
+	text-decoration: none;
+}
+@-moz-keyframes cloud-animation {
+	100% {
+		background-position: 0px 2em;
+	}
+}
+@-webkit-keyframes cloud-animation {
+	100% {
+		background-position: 0px 2em;
+	}
+}
+@-o-keyframes cloud-animation {
+	100% {
+		background-position: 0px 2em;
+	}
+}
+@keyframes cloud-animation {
+	100% {
+		background-position: 0px 2em;
+	}
+}
+@-moz-keyframes witch-word-color {
+	0% {
+		color: #d3b7f7;
+	}
+	50% {
+		color: #50514f;
+	}
+	100% {
+		color: #fff;
+	}
+}
+@-webkit-keyframes witch-word-color {
+	0% {
+		color: #d3b7f7;
+	}
+	50% {
+		color: #50514f;
+	}
+	100% {
+		color: #fff;
+	}
+}
+@-o-keyframes witch-word-color {
+	0% {
+		color: #d3b7f7;
+	}
+	50% {
+		color: #50514f;
+	}
+	100% {
+		color: #fff;
+	}
+}
+@keyframes witch-word-color {
+	0% {
+		color: #d3b7f7;
+	}
+	50% {
+		color: #50514f;
+	}
+	100% {
+		color: #fff;
+	}
+}
+
+/*=================================================
+||				2. Aaron
+==================================================*/
+
+body .aaron-bg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+
+	background-color: #6ab1c9;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/*=================================================
+||				3. Caleb
+==================================================*/
+
+
+body .caleb-bg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+
+	background-color: #ac7ee5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+body .textdiv{
+	width: 80%;
+}
+
+body .storytext{
+	font-size: 1.2em;
+}
+
